@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  background-color: #394764;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+title {
+  display: none;
+}
+
+#calc {
+  padding: .5em;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+#operations {
+  text-align: right;
+}
+
+#previous-operation {
+  background: none;
+  padding: .6em;
+  overflow-wrap: break-word;
+  min-height: 1.6em;
+}
+
+#current-operation {
+  background: none;
+  padding: .2em;
+  overflow-wrap: break-word;
+  min-height: 1.6em;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  gap: 14px;
+}
+
+h1 {
+  color: red
+}
+
+.titulo {
+  color: red
+}
+
+.Calculator {
+  border: 1px solid;
+  height: 500px;
+  width: 300px;
+  color: #000
+}
+
+.Display {
+  background: #182033;
+  width: 296px;
+  border-radius: 8px;
+}
+
+.DisplayButtons {
+  background: #182033;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 6px;
+}
+
+.Buttons {
+  display: grid;
+  background: #182033;
+
+  grid-template-columns: repeat(4,1fr);
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+button {
+  background: #fff;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  color: #182033;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #bababa;
+  border-color: #999;
+}
+
+.ButtonBottom {
+  display: flex;
+  gap: 12px;
+  background: #182033;
+  padding: 12px;
+  border-radius: 8px;
+
+}
+
+.ButtonBottom button {
+  width: 100%;
+}
+
+
+.Reset {
+  width: 100%;
+  background: #637198;
+  color: #FFF;
+  grid-column: span 2;
+}
+
+.DisplayButtons .Result {
+  background: #d13f30;
+  grid-column: span 2;
+  width: 100%;
+}
+  
+.Signal {
+    background: #637198;
+    color: #FFF
+  }
